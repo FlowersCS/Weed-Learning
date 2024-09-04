@@ -101,7 +101,7 @@ class LRFinder:
                 break
 
         # reset model to initial parameters
-        self.model.load_state_dict(torch.load('init_params.pt'))
+        self.model.load_state_dict(torch.load('init_params.pt', weights_only=True))
 
         return lrs, losses
 
