@@ -1,5 +1,6 @@
 from tqdm.notebook import tqdm
 import torch
+from torch.optim.lr_scheduler import _LRScheduler
 import matplotlib.pyplot as plt
 
 def calculate_accuracy(y_pred, y):
